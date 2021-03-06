@@ -50,7 +50,7 @@ main {
 
     width: 93.25em;
     text-align: center;
-    padding: 4.5em 0 3.25em 9.25em;
+    padding: 4.5em 0 0 9.25em;
     margin-left: 7.95em;
 }
 
@@ -208,7 +208,7 @@ article {
     background-color: #242424;
 }
 
-#gallery_post .post { margin-bottom: 1.618em; }
+#gallery_post .post { margin-bottom: 3.2em; }
 
 #right_post { position: fixed; }
 
