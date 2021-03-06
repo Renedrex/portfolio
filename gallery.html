@@ -37,16 +37,9 @@
 
         <div id="wrapper">
 
-<!--        <div id="banner">                                   -->
+            <div id="banner">
 
-                <div id="logo">
-
-                    <img src="images/website/banner_white.png">
-<!--                <img src="images/website/banner_red.png">           -->
-
-<!--                <h1><a href="index.html">Renedrex</a></h1>  -->
-
-                </div>
+                <div id="logo"><img src="images/website/banner_white.png"></div>
 
                 <div id="menu">
 
@@ -58,36 +51,30 @@
 
                     </ul>
 
-<!--            </div>                                          -->
-
+                </div>
             </div>
 
             <main id="gallery_post">
 
                 <div class="post">
 
-                    <h2>Latest Commissions</h2>
-                    <hr>
-
+                    <h2>Latest Commissions</h2><hr>
                     <img src="images/website/commisions-showcase.jpg" data-caption="" />
 
                 </div>
 
                 <div class="post">
 
-                    <h2>Recent Animations</h2>
-                    <hr>
+                    <h2>Recent Animations</h2><hr>
 
                     <iframe width="640" height="360" src="https://www.youtube.com/embed/gzcrUgqSTD0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
                     <iframe width="640" height="360" src="https://www.youtube.com/embed/t-xjHuYl5wk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 </div>
 
                 <div class="post">
 
-                    <h2>General Artwork</h2>
-                    <hr>
+                    <h2>General Artwork</h2><hr>
 
                     <div id="artwork-container" style="width: 100%; height: 726px">
 
@@ -118,13 +105,11 @@
                         <!--------- Artwork added above --------->
 
                     </div>
-
                 </div>
 
                 <div class="post">
 
-                    <h2>Short Sketches</h2>
-                    <hr>
+                    <h2>Short Sketches</h2><hr>
 
                     <div id="sketches-container" style="width: 100%; height: 726px">
 
@@ -148,54 +133,14 @@
             </main>
         </div>
 
-        <footer id="footer-gallery">
+        <footer id="footer-gallery"><small>© 2021, Renedrex</small></footer>
 
-            <small>© 2020, Renedrex</small>
-
-        </footer>
-
+        <script src="js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script type="text/javascript" src="js/jquery.balanced-gallery.js"></script>
 
-<!--    <script src="js/jquery-1.4.4.min.js"></script>
-        <script src="js/jquery-1.8.2.js"></script>
-        <script src="js/jquery-2.0.3.min.js"></script>
-
-        <script src="js/ui/jquery-ui.js"></script>
-        <script src="js/ui/i18n/jquery-ui-i18n.js"></script>
-
-        <script src="js/bower.json"></script>
-        <script src="js/grunt.js"></script>                     !-->
-
-        <script src="js/bootstrap.min.js"></script>
-<!--    <script src="js/gallery.js"></script>                   !-->
-
-<!--    <script src="js/jquery-sortable-photos.js"></script>    !-->
-
-        <script type="text/javascript">
-
-            $(window).load(function () {
-
-                $('#artwork-container').BalancedGallery({
-
-                    background:"#242424",      // the css properties of the gallery's containing element
-                });
-
-            });
-
-        </script>
-
-        <script type="text/javascript">
-
-            $(window).load(function () {
-
-                $('#sketches-container').BalancedGallery({
-
-                    background:"#d5d5d5",      // the css properties of the gallery's containing element
-                });
-            });
-
-        </script>
+        <script type="text/javascript">$(window).load(function(){$('#artwork-container').BalancedGallery({background:"#242424"});});</script>
+        <script type="text/javascript">$(window).load(function(){$('#sketches-container').BalancedGallery({background:"#d5d5d5"});});</script>
 
     </body>
 
