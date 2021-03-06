@@ -35,7 +35,7 @@ main {
     position: fixed;
     width: 22em;
     float: right;
-    margin: 0.415em 1em 0 79.8em;
+    margin: 0.415em 1em 0 79.2em;
     padding: 0;
 }
 
@@ -43,29 +43,21 @@ main {
 
     float: left;
     width: auto;
-    margin: -0.215em auto 1.618em 42.3em;
+    margin: -0.215em auto 1.618em 42em;
 }
-
-#twitter_post {
-
-    float: left;
-    width: auto;
-    margin: -0.215em auto 1.618em 42.3em;
-}
-
 
 #gallery_post {
 
-    width: 109.75em;
+    width: 93.25em;
     text-align: center;
     padding: 4.5em 0 3.25em 9.25em;
-
+    margin-left: 7.95em;
 }
 
 #enquire_post {
 
     float: left;
-    margin: 0.415em auto 1.618em 42.3em;
+    margin: 0.415em auto 1.618em 41.65em;
     text-align: center;
 }
 
@@ -108,7 +100,7 @@ footer {
 
 /* #logo { background-color: #FFF2E5; } */
 
-#logo {background: url(/images/website/banner_background.jpg)}
+#logo {background: url(https://renedrex.github.io/portfolio/images/website/banner_background.jpg)}
 
 #logo img {
 
@@ -138,19 +130,19 @@ h2 {
 
     color: #ffffff;
     font-size: 1.618em;
-    margin: 0 0 1em 0;
+    margin: 0 0 0.6em 0;
     text-align: center;
 }
-
-#gallery_post h2 {margin: 0 0 0.6em 0;}
 
 h3 {
 
 	color: #ffffff;
-    margin: 0 0 0 0;
+    margin: 0 0 -0.18em 0;
     font-size: 1.618em; /* 1.125em */
     text-align: center;
 }
+
+hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eeeeee;}
 
 p {
 
@@ -216,12 +208,14 @@ article {
     background-color: #242424;
 }
 
+#gallery_post .post { margin-bottom: 1.618em; }
+
 #right_post { position: fixed; }
 
 #right_post .post {
 
     background-color: #413751;
-    margin-bottom: 0.65em;
+    margin-bottom: 1.34em;
 }
 
 #right_post a { text-decoration: none; }
@@ -341,15 +335,16 @@ img {
     border: 0px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1.618em;
     margin-bottom: 1.618em;
 }
 
 #enquire_post img {
 
     border: 1px solid #ffffff;
-    width: 54.5em;
+    width: 56.5em;
     margin-top: 1.48em;
-    margin-left: 4.9em;
+    margin-left: 2.9em;
 }
 
 img.comparison {
