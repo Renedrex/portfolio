@@ -1,0 +1,895 @@
+/*-----------------------
+Base Styles
+------------------------*/
+
+html { scroll-padding-top: 5.95em; }
+
+body {
+
+    margin-top: 16.55em;
+	font-family: "Monorale", "Raleway", "Calibri", sans-serif;
+	font-size: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: #0A0A0A;
+    overflow-y: scroll;
+}
+
+main {
+
+    float: left;
+    width: 100%;
+}
+
+#left_post {
+
+    position: fixed;
+    width: 22em;
+    float: left;
+    margin: 0.415em 0 0 17.2em;
+    padding: 0;
+}
+
+#right_post {
+
+    position: fixed;
+    width: 22em;
+    float: right;
+    margin: 0.415em 1em 0 79.8em;
+    padding: 0;
+}
+
+#twitter_post {
+
+    float: left;
+    width: auto;
+    margin: -0.215em auto 1.618em 42.3em;
+}
+
+#twitter_post {
+
+    float: left;
+    width: auto;
+    margin: -0.215em auto 1.618em 42.3em;
+}
+
+
+#gallery_post {
+
+    width: 109.75em;
+    text-align: center;
+    padding: 4.5em 0 3.25em 9.25em;
+
+}
+
+#enquire_post {
+
+    float: left;
+    margin: 0.415em auto 1.618em 42.3em;
+    text-align: center;
+}
+
+#wrapper {
+
+    margin 0;
+    overflow: hidden;
+    padding-bottom: 1.25em;
+}
+
+footer {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.25em;
+    color: #fff;
+    background: #242424;
+    text-align: center;
+    border-top: 1px solid #ffffff;
+    padding: 0.5em 0em 0.5em 0em;
+}
+
+#footer-index { position: fixed; }
+
+#footer-gallery {
+
+    position: fixed;
+    padding: 0.5em 0em 1.75em 0em;
+
+}
+
+#banner {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+}
+
+/* #logo { background-color: #FFF2E5; } */
+
+#logo {background: url(/images/website/banner_background.jpg)}
+
+#logo img {
+
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#menu {
+
+    background-color: #413751;
+    border-bottom: 1px solid #242424;
+
+}
+
+/* -----------------------
+Text Sizes
+------------------------*/
+
+h1 { font-style: italic; }
+
+h2 {
+
+    color: #ffffff;
+    font-size: 1.618em;
+    margin: 0 0 1em 0;
+    text-align: center;
+}
+
+#gallery_post h2 {margin: 0 0 0.6em 0;}
+
+h3 {
+
+	color: #ffffff;
+    margin: 0 0 0 0;
+    font-size: 1.618em; /* 1.125em */
+    text-align: center;
+}
+
+p {
+
+	color: #ffffff;
+    margin: 0 0 0 0;
+    font-size: 1em; /* .875em */
+	line-height: 1.618em;
+}
+
+#left_post p { text-align: center; }
+#twitter_post p { color: #000000}
+#twitter_post a { color: #000000}
+
+a { text-decoration: none; }
+a:link { color: #C00; }
+a:visited { color: #C00; }
+a:focus { color: #C00; }
+a:active { color: #C00; }
+
+a:hover {
+
+    color: #C00;
+    transition: color 0.2s ease 0s;
+}
+
+a[href^="#top"] { font-size: .75em; }
+
+li {
+
+    margin: 0.5em 0 0.5em 0;
+    font-size: 1em; /* 1.1em */
+	line-height: 1.1em;
+}
+
+/*-----------------------
+Added Font
+------------------------*/
+
+@font-face {
+
+    font-family: Monorale;
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.rawgit.com/samvk/monorale-raleway-sober/master/woff/Monorale-Regular.woff') format('woff');
+}
+
+/* -----------------------
+Article Posts
+------------------------*/
+
+article {
+
+	padding-top: 1.5em;
+    overflow: hidden;
+}
+
+.post {
+
+    padding: 1.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #C6C6C6;
+    background-color: #242424;
+}
+
+#right_post { position: fixed; }
+
+#right_post .post {
+
+    background-color: #413751;
+    margin-bottom: 0.65em;
+}
+
+#right_post a { text-decoration: none; }
+#right_post a:link { color: #ffffff; }
+#right_post a:visited { color: #ffffff; }
+#right_post a:focus { color: #C00; }
+#right_post a:active { color: #C00; }
+
+#right_post a:hover {
+
+    color: #C00;
+    transition: color 0.2s ease 0s;
+}
+
+article#blank-module {display: block}
+article#agile-methodology {display: none}
+article#data-structures {display: none}
+article#embedded-systems {display: none}
+
+/* -----------------------
+Table Styles
+------------------------*/
+
+table {
+
+	border-spacing: 0;
+	border-collapse: collapse;
+    table-layout: fixed;
+	margin: 1em 0 1.618em 0;
+}
+
+table#last {
+
+    margin: 0 0 0 0;
+}
+
+tbody tr:nth-child(odd) {
+
+	background-color: #E6E6E6;
+}
+
+th, td {
+
+	font-size: 1em;
+    padding: .6em 0 .6em 0;
+	border: 1px solid #C6C6C6;
+	vertical-align: top;
+	text-align: center;
+	white-space: nowrap;
+}
+
+td:first-child {
+
+    width: 16.18em;
+}
+
+td:not(:first-child):not(:last-child) {
+
+    width: 10em;
+}
+
+td:last-child {
+
+    width: 16.18em;
+}
+
+.aligned-divs table {
+
+    margin: 0.5em -2px 0.86em 0;
+
+}
+
+.aligned-divs td:not(:first-child) {
+
+    width: 30em;
+}
+
+/**Responsive table styles sourced from http://maxdesign.com.au/articles/simple-responsive-table/
+*See link for more responsive table styling options, explanation etc.
+*/
+
+.table-container /*Add a scrollbar to a table for small screen devices*/ {
+
+	width: 100%;
+	overflow-x: auto;
+}
+
+.table-container::-webkit-scrollbar /*Add the scrollbar to an iOS mobile browser*/ {
+
+	-webkit-appearance: none;
+	width: 14px;
+	height: 14px;
+}
+
+.table-container::-webkit-scrollbar-thumb /*Add the scrollbar to an iOS mobile browser*/ {
+
+	border-radius: 8px;
+	border: 3px solid #fff;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+/* -----------------------
+Image and Video Layout
+------------------------*/
+
+img {
+
+    display: block;
+    max-width: 100%;
+    border: 1px solid;
+    margin-top: 0.5em;
+
+}
+
+#left_post img {
+
+    border: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.618em;
+}
+
+#enquire_post img {
+
+    border: 1px solid #ffffff;
+    width: 54.5em;
+    margin-top: 1.48em;
+    margin-left: 4.9em;
+}
+
+img.comparison {
+
+    display: inline-block;
+    max-width: 100%;
+
+}
+
+.aligned-div-left {
+
+    max-width: 48.18%;
+    float: left;
+}
+
+.aligned-div-right {
+
+    padding-left: 1.625em;
+    max-width: 48.18%;
+    float: left;
+}
+
+.iframe-container iframe {
+
+    top: 0;
+	left: 0;
+	height: 29.84em;
+    width: 99.8%;
+    margin-top: 0.5em;
+    border: 1px solid #404040;
+}
+
+/* --------------------------------------------------
+Menu Navigation - vertical layout for smaller screens
+---------------------------------------------------*/
+
+#banner {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+#menu {
+
+    padding: 0.618em 0em 0.618em 0em;
+	text-transform: uppercase;
+	font-weight: bold;
+    font-size: 1.618em;
+    text-align: center;
+}
+
+#logo h1 {
+
+    float: center;
+    font-size: 9.2em;
+    text-align: center;
+    padding: 0.1em 0em 0.1em 0em;
+    margin: 0 0 0 0;
+}
+
+#logo a:link { color: #fff; }
+#logo a:visited { color: #fff; }
+#logo a:focus { color: #c00000; }
+#logo a:active { color: #c00000; }
+#logo a:hover { color: #ff0000;
+                transition: color 0.2s ease 0s;
+}
+
+#menu li {
+
+    display: inline;
+    margin: 0 .5em 0 .5em;
+}
+
+#menu ul {
+
+    margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+
+#menu a { padding: 0; }
+#menu a:link { color: #fff; }
+#menu a:visited { color: #fff; }
+#menu a:hover { color: #ff0000;
+                transition: color 0.2s ease 0s;
+                text-decoration: underline;
+                }
+#menu a:active { color: #c00; }
+
+-
+
+/* ---------------------------------------------------
+Wider screens - i.e. desktop, laptop, tablet landscape
+----------------------------------------------------*/
+
+@media (min-width: 51em)
+{
+	.banner
+    {
+        padding: 1.5em 3em 1.5em 3em;
+
+    }
+
+    main
+	{
+		float: left;
+		width: 100%;
+	}
+
+    .article
+    {
+        padding-top: 2em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+	footer
+    {
+        padding: 10px 0em 0em 0em;
+        bottom: 0;
+        right: 0;
+    }
+
+    #menu { background-color: 413751; }
+
+	#menu li
+	{
+		display: inline;
+		margin: 0 0 0 0;
+	}
+
+	#menu a
+	{
+		display: inline;
+		padding: 0;
+		border-bottom: 0;
+        color: #fff;
+	}
+}
+
+/* ----------------------
+Mobile screens - portrait
+-----------------------*/
+
+@media (max-width : 58.9em)
+{
+    #menu li:nth-child(1) { display: none; }
+}
+
+@media (max-width : 52em)
+{
+    #menu li
+    {
+        display: none;
+    }
+
+    #banner
+    {
+        position: absolute;
+        padding-bottom: 1px;
+    }
+
+    #banner
+    {
+        width: 100%;
+        text-align: center;
+        background-position: center;
+    }
+
+    #left_post
+    {
+        width: 100%;
+    }
+
+    #center
+    {
+        width: 100%;
+    }
+
+    #right_post
+    {
+        width: 100%;
+    }
+
+    main
+    {
+        width: 100%;
+    }
+
+    th, td
+    {
+        font-size: 100%;
+        padding: .2em 1em .2em 1em;
+        border: 1px solid #ddd;
+        vertical-align: top;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    #footer
+    {
+        margin: 0.25em 0 0 0;
+        position: relative;
+    }
+
+    img.comparison
+    {
+        display: inline;
+        max-width: 100%;
+    }
+
+    .aligned-div-left
+    {
+        max-width: 100%;
+        float: left;
+    }
+
+    .aligned-div-right
+    {
+        padding-left: 0em;
+        max-width: 100%;
+    }
+
+    .aligned-divs table
+    {
+        align-content: center;
+        max-width: 100.2%;
+        margin: 0 0 0.86em 0;
+    }
+
+    .iframe-container iframe
+    {
+        max-width: 99.6%;
+        height: 29.83em;
+
+    }
+
+}
+
+/*float/clear classes */
+
+.fltrt
+{  /* this class can be used to float an element e.g. image right in the page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: .5em;
+}
+.fltlt
+{ /* this class can be used to float an element e.g. image left in the page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: .5em;
+}
+.clear
+{ /* this class can be placed on an element or empty div as the final element following the last floated div */
+	clear: both;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+/*
+Simple Photo Gallery by Tyson Hummel
+http://github.com/tysonhummel
+Free to use with no restrictions
+*/
+
+#gallery-wrapper{
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  padding: 30px 7%;
+  height: 100%;
+  width: 100%;
+  background: rgba( 0, 0, 0, .85);
+  z-index: 1100;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  display:none;
+}
+@keyframes blink {
+  0% { -webkit-opacity: .4;-moz-opacity: .4;opacity: .4; }
+  50% { -webkit-opacity: 1;-moz-opacity: 1;opacity: 1; }
+  100% { -webkit-opacity: .4;-moz-opacity: .4;opacity: .4; }
+}
+@-webkit-keyframes blink {
+  0% { -webkit-opacity: .4;-moz-opacity: .4;opacity: .4; }
+  50% { -webkit-opacity: 1;-moz-opacity: 1;opacity: 1; }
+  100% { -webkit-opacity: .4;-moz-opacity: .4;opacity: .4; }
+}
+#gallery-wrapper::after{
+  content: 'loading';
+  position: absolute;
+  color: #ccc;
+  left: 50%;
+  top: 50%;
+  margin-top: -10px;
+  margin-left: -22px;
+  z-index: 999;
+  -webkit-animation: blink 1.5s linear infinite;
+  -moz-animation: blink 1.5s linear infinite;
+  animation: blink 1.5s linear infinite;
+}
+
+#gallery-wrapper .img-wrapper-outer-wrapper{
+  position: relative;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+#gallery-wrapper .img-wrapper-outer{
+  position: relative;
+  clear: left;
+  float: left;
+  left: 50%;
+}
+#gallery-wrapper .img-wrapper{
+  position: relative;
+  float: left;
+  right: 50%;
+}
+#gallery-wrapper img{
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+  position: relative;
+  z-index: 1099;
+}
+#gallery-wrapper .caption{
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, .5);
+  color: white;
+  line-height:normal;
+  z-index: 1999;
+  padding: 10px;
+  bottom: -1px;
+  max-height: calc(100% + 1px);
+  overflow: hidden;
+  -webkit-transition: max-height 1.5s;
+  -moz-transition: max-height 1.5s;
+  transition: max-height 1.5s;
+  -webkit-transform: translate3d(0,0,0);
+  border-radius: 0 0 5px 5px;
+}
+#gallery-wrapper .caption.opened{
+    overflow: auto;
+}
+#gallery-wrapper .caption.mini{
+  overflow: hidden;
+  max-height: 6px;
+  -webkit-transition: max-height 1s;
+  -moz-transition: max-height 1s;
+  transition: max-height 1s;
+  -webkit-transform: translate3d(0,0,0);
+}
+#gallery-wrapper .caption.mini.closed{
+  padding: 0;
+  color: black;
+  background: rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
+#gallery-wrapper .caption .close-captions{
+position: absolute;
+top: 0;
+right: 2px;
+color: #aaa;
+cursor: pointer;
+font-size: .7em;
+line-height: .5;
+}
+#gallery-wrapper .caption .close-captions:hover{
+  color: white;
+}
+#gallery-wrapper .caption.mini.closed .close-captions{
+  display: none;
+}
+#gallery-wrapper .caption.mini.closed::before{
+  content: '▾';
+  font-size: .7em;
+  color: #aaa;
+  position: absolute;
+  z-index: 8;
+  right: 2px;
+  top: -0.3em;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+#gallery-wrapper .caption .tooltip{
+  margin-top: 7px;
+}
+
+#prev-slide,
+#next-slide{
+  color: white;
+  cursor: pointer;
+  width: 7%;
+  z-index: 99999;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  top: 0;
+  -webkit-opacity: .5;
+  -moz-opacity: .5;
+  opacity: .5;
+}
+#prev-slide{
+  left: 0;
+}
+#next-slide{
+  right: 0;
+}
+
+#prev-slide:hover,
+#next-slide:hover{
+  -webkit-opacity: .8;
+  -moz-opacity: .8;
+  opacity: .8;
+}
+.triangle-right{
+  margin: 0px auto;
+  width: 0px;
+  height: 0px;
+  padding-top: 70%;
+  padding-bottom: 70%;
+  padding-left: 70%;
+  overflow: hidden;
+}
+.triangle-right::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-top:-800px;
+  margin-left: -800px;
+  border-top: 800px solid transparent;
+  border-bottom: 800px solid transparent;
+  border-left: 800px solid #fff;
+}
+.triangle-left{
+  margin: 0px auto;
+  width: 0;
+  height: 0;
+  padding-top: 70%;
+  padding-bottom: 70%;
+  padding-right: 70%;
+  overflow: hidden;
+}
+.triangle-left::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-top:-800px;
+  border-top: 800px solid transparent;
+  border-bottom: 800px solid transparent;
+  border-right: 800px solid #fff;
+}
+
+#gallery-close{
+  position: absolute;
+  width: 5%;
+  text-align: center;
+  top: 0;
+  right: 0;
+  font-size: 2em;
+  line-height: 1em;
+  color: white;
+  z-index: 999999;
+  cursor: pointer;
+  -webkit-opacity: .5;
+  -moz-opacity: .5;
+  opacity: .5;
+}
+#gallery-close:hover{
+  -webkit-opacity: .8;
+  -moz-opacity: .8;
+  opacity: .8;
+}
+#gallery-counter{
+  color: #ccc;
+  position: absolute;
+  width: 200px;
+  top: 0;
+  left: 50%;
+  font-size: 1.5em;
+  margin-left: -100px;
+  z-index: 9923;
+  cursor: default;
+}
+
+/*no webkit*/
+#gallery-wrapper.no-webkit::after{
+  top: 15%;
+}
+#gallery-wrapper.no-webkit img{
+height: 100%;
+max-height: none;
+max-width: none;
+width: 100%;
+}
+.no-webkit .triangle-right,
+.no-webkit .triangle-left{
+  position: relative;
+  top: 10%;
+}
+
+
+@media (min-width: 768px){
+  #gallery-wrapper .caption{
+    font-size:1em;
+  }
+}
+@media (min-width: 992px){
+  #gallery-wrapper .caption{
+    font-size:1.4em;
+  }
+}
+@media (min-width: 1200px){
+  #gallery-wrapper .caption{
+    font-size:1.8em;
+  }
+}
+
+@media (max-width: 580px){
+  #gallery-wrapper .caption{
+    font-size:.8em;
+  }
+}
